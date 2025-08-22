@@ -14,7 +14,6 @@ import os
 from pathlib import Path
 import environ
 
-
 # Initialize environment variables
 env = environ.Env(
     DEBUG=(bool, False)
@@ -37,7 +36,6 @@ DEBUG = env('DEBUG')
 ALLOWED_HOSTS = env.list('DJANGO_ALLOWED_HOSTS', default=['localhost', '127.0.0.1'])
 
 # Application definition
-
 INSTALLED_APPS = [
     # Default Django apps
     'django.contrib.admin',
@@ -61,6 +59,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',   # <-- Add WhiteNoise middleware here
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -96,7 +95,6 @@ DATABASES = {
 }
 
 # Password validation
-
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -113,22 +111,21 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 # Internationalization
-
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
+STATIC_URL = '/static/'
 
-STATIC_URL = 'static/'
+# Important: set STATIC_ROOT for collectstatic to work in production
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-# Default primary key field type
-
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+# Use WhiteNoise static files storage for efficient static serving in production
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Django REST Framework config including Token Authentication, permissions, pagination, filtering
-
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.TokenAuthentication',
@@ -145,3 +142,6 @@ REST_FRAMEWORK = {
         'rest_framework.filters.SearchFilter',
     ),
 }
+
+# Default primary key field type
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
