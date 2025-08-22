@@ -1,0 +1,27 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment folder
+venv/
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.sqlite3
+db.sqlite3
+media
+
+# VS Code
+.vscode/
+
+# Env files containing secrets - optional to exclude .env but include .env.example
+.env
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
