@@ -194,7 +194,7 @@ text
 *Add these screenshots here, ideally in a folder named `screenshots/` in your repo.*
 
 1. **Project Home Directory Structure**  
-   Screenshot of your project root folder showing the structure (apps, settings, manage.py, etc.)
+   Screenshot of project root folder showing the structure (apps, settings, manage.py, etc.)
 <img width="844" height="226" alt="Screenshot 2025-08-23 032942" src="https://github.com/user-attachments/assets/87b5377b-c47e-4c87-946a-4402c9372e50" />
 
 
@@ -202,33 +202,34 @@ text
 
 2. **Virtual Environment Setup**  
    Screenshot of terminal commands creating and activating the virtual environment.
+<img width="1392" height="1007" alt="image" src="https://github.com/user-attachments/assets/3a25c537-c2c5-4a9e-ba33-6e7110165f3e" />
 <img width="1359" height="999" alt="Screenshot 2025-08-23 033120" src="https://github.com/user-attachments/assets/1bb8756d-ac8b-4140-8dd0-695eab7c697a" />
 
 
 
 
-3. **Dependency Installation**  
+4. **Dependency Installation**  
    Screenshot of running `pip install -r requirements.txt`.
 <img width="1900" height="621" alt="image" src="https://github.com/user-attachments/assets/4e313d90-b724-4b7e-8a72-3bf077af9f56" />
 
 
 
 
-4. **Running Migrations**  
+5. **Running Migrations**  
    Show successful `python manage.py migrate` output.
 <img width="1187" height="131" alt="image" src="https://github.com/user-attachments/assets/09f18c42-ba48-4bae-abea-00ed23539b34" />
 
 
 
 
-5. **Seed Data Running**  
+6. **Seed Data Running**  
    Screenshot showing `python manage.py seed_data` running and output.
 <img width="958" height="63" alt="image" src="https://github.com/user-attachments/assets/73eb3cd6-6b39-40b9-add6-b3e56e78ffe2" />
 
 
 
 
-6. **Running Server**  
+7. **Running Server**  
    Screenshot of running the server and hitting API root with a sample API response.
 <img width="1919" height="839" alt="Screenshot 2025-08-23 032958" src="https://github.com/user-attachments/assets/480eeb8e-2868-4d77-a383-3f504b24c4ae" />
 <img width="1919" height="946" alt="Screenshot 2025-08-23 033017" src="https://github.com/user-attachments/assets/27ab8b63-a6da-4bfa-ae79-4abbb90ee808" />
@@ -237,28 +238,28 @@ text
 
 
 
-7. **Admin Login Page**  
+8. **Admin Login Page**  
    Screenshot of Django admin login page.
 <img width="1919" height="951" alt="image" src="https://github.com/user-attachments/assets/747c4cdd-0a7b-4c24-a420-1ff3e2b5e7d3" />
 
 
 
 
-8. **Swagger UI**  
+9. **Swagger UI**  
    Screenshot showing API docs via Swagger.
 <img width="1919" height="948" alt="Screenshot 2025-08-23 033059" src="https://github.com/user-attachments/assets/5384870b-bc02-4027-acb5-e3ca429b88bd" />
 
 
 
 
-9. **Sample Employee API Response**  
+10. **Sample Employee API Response**  
    Screenshot of actual JSON response from employee list API endpoint.
 <img width="610" height="604" alt="image" src="https://github.com/user-attachments/assets/1669c746-eaed-414b-b933-126070aae546" />
 
 
 
 
-10. **Charts Page**  
+11. **Charts Page**  
     Screenshot of the rendered charts page visualizing employee statistics.
 <img width="1919" height="942" alt="Screenshot 2025-08-23 033209" src="https://github.com/user-attachments/assets/7f8ccaa9-ac5a-4504-9e04-d328bd0ab40e" />
 <img width="1919" height="948" alt="Screenshot 2025-08-23 033200" src="https://github.com/user-attachments/assets/ee0681a1-23dc-449b-bad2-51152eda23dc" />
